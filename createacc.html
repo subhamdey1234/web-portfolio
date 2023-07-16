@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <style>
+ body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            background: black;
+            color: aliceblue;
+            overflow: hidden;
+        }
+        h1,h2,h3,h4{
+            font-weight: 300;
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        #left{
+display: flex;
+flex-direction: column;
+flex: 1;
+align-items: center;
+justify-content: center;
+height: 96vh;
+padding: 4px;
+
+        }
+        #right
+        {
+flex: 1;
+        }
+.signin{
+display: flex;
+flex-direction: column;
+width: 80%;
+height: 0.7%;
+align-items: center;
+justify-content: center;
+padding-bottom: 2px;
+}
+.signin .logo{
+    margin-bottom: 0.1vh;
+}
+.signin label{
+    font-weight: 500;
+    line-height: 0.1rem ;
+    font-size: medium;
+}
+
+.signin  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+
+}
+.signin .text-input{
+    margin-bottom: 1.3rem;
+    border-radius: 2px;
+    width: 100%;
+    height: 10%;
+    background:black ;
+    border:1px solid #555;
+    color: antiquewhite;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+.signin form {
+    width: 80%;
+    padding-bottom:3rem ;
+}
+.signin form button{
+border-radius: 30px;
+width: 530px;
+height: 40px;
+background-color: #ff7b39;
+text-decoration: none;
+font-weight: 500;
+color: black;
+border: 0;
+cursor: pointer;
+display: block;
+font-size: larger;
+}
+form button:hover{
+    background-color: aquamarine;
+    transition: 1s;
+}
+.secondary-btn{
+    padding: 0.7rem 1rem ;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: backgrounf-color 0.5s;
+    text-decoration: none;
+}
+.secondary-btn:hover{
+    background-color:#ff7b39 ;
+}
+#showcase{
+   
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   align-items: center;
+   text-align: center;
+    background: url("https://static.vecteezy.com/system/resources/previews/000/560/715/original/vector-purple-polygonal-mosaic-background-creative-design-templates.jpg") no-repeat center center / cover;
+}
+.signin .secondary-btn,.or,.links{
+    width: 80%;
+}
+.signin .links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.signin .or{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    flex-direction: row;
+}
+.signin .or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+.signin .or span{
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+#main-footer{
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 3rem;
+}
+#main-footer a{
+    color: #aaa29e;
+    text-decoration: underline;
+}
+.links #forgot-password:hover,#signinwith:hover{
+    color: #ff7b39;
+    transition: 1s;
+}
+
+.showcase-text{
+    color: #e7e7e7;
+}
+    </style>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div id="left">
+           
+            <div class="signin">
+         <div class="logo">
+            <img style="width: 100px ;text-align: center;border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74315357?v=4" alt="" srcset="">
+         </div>
+<form action="">
+   
+
+    <div>
+        <label > Name </label>
+        <input type="text" class="text-input" required>
+
+    </div>
+
+
+    <div>
+        <label >Email </label>
+        <input type="email" class="text-input" required>
+
+    </div>
+
+
+    
+    <div>
+        <label >number </label>
+        <input type="tel" class="text-input" maxlength="10" required>
+
+    </div>
+
+
+
+    <div>
+        <label >password</label>
+         <input type="password" class="text-input" required>
+
+    </div>
+    <div>
+        <button type="submit" class="primary-btn">  Create Account </button>
+    </div>
+</form>
+<div class="links">
+    <a id="forgot-password"  href="#">Reset password</a>
+    <a id="signinwith" href="#">Create Account with comapny or school</a>
+
+</div>
+<div class="or">
+    <hr class="bar">
+    <span>OR</span>
+    <hr class="bar">
+
+</div>
+<a href="signin.html" class="secondary-btn">Sign-in</a>
+<footer id="main-footer">
+    <p>
+    copyright &copy; 2022 Subham Dey All rights reserved
+    </p>
+</footer>
+<div>
+    <a style="color: #fff;" href="#" id="">terms of use</a>|<a style="color: #fff;" href="#">Privacy Policy</a>
+</div>
+
+
+            </div>
+        </div>
+        <div id="right">
+             <div id="showcase">
+                <div class="showcase-content">
+                    <h1 class="showcase-text">Let's Work <strong>Together</strong></h1>
+<a href="port.html" class="secondary-btn">See My 2nd portfolio web </a>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

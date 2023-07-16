@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website Portfolio</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #3976ae;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.323);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 120px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project {
+      margin: 20px;
+      background-color: rgba(227, 181, 181, 0.264);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project p {
+      margin-top: 10px;
+    }
+
+    .project .btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project .btn:hover {
+      background-color: #ff1010;
+    }
+
+    .project img {
+      width: 360px;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website Portfolio</h1>
+  </header>
+
+  <div class="container">
+    <div class="project">
+      <img src="Screenshot (85).png" alt="Project 1">
+      <h3>Nirmala Electronics website</h3>
+      <p>Description of Project 1.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="project">
+      <img src="Screenshot (94).png" alt="Project 2">
+      <h3>frontend netbanking webpage</h3>
+      <p></p>
+      <a href="https://mywebsites12345subhamdey.on.drv.tw/electronic%20shop/banking/" class="btn">View Project</a>
+    </div>
+
+    <div class="project">
+      <img src="Screenshot (45).png" alt="Project 3">
+      <h3>Personal Portfolio webpage</h3>
+      <p>Description of Project 3.</p>
+      <a href="https://mywebsites12345subhamdey.on.drv.tw/education/" class="btn">View Project</a>
+    </div>
+    
+    <div class="project">
+        <img src="Screenshot (36).png" alt="Project 4">
+        <h3>music Stunes webpage</h3>
+        <p>Description of Project 3.</p>
+        <a href="https://mywebsites12345subhamdey.on.drv.tw/www.music.com/music.html#overview" class="btn">View Project</a>
+      </div>
+  </div>
+
+  <script>
+    // JavaScript code
+    // Animation using GSAP library
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from("header", {
+      opacity: 0,
+      duration: 1,
+      y: -20,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: "header",
+        start: "top 80%",
+        end: "top 50%",
+        toggleActions: "play none none reset"
+      }
+    });
+
+    gsap.from(".project", {
+      opacity: 0,
+      duration: 1,
+      y: 20,
+      stagger: 0.2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".project",
+        start: "top 80%",
+        toggleActions: "play none none reset"
+      }
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</body>
+</html>

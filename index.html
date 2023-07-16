@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+  
+    background-position: center ;
+     background-size: cover;
+    position: relative;
+}
+@media(max-width:400px) {
+  .header video{
+ 
+   height: 500px;
+  
+
+ }
+  .text-box h1{
+    top: 40px;
+  
+  }
+  .text-box {
+    animation-name: inherit;
+  }
+
+  
+}
+
+nav
+{
+  top: 0;
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+  position: initial;
+  
+    position:relative;
+}
+nav img{
+    width: 150px;
+    border-radius: 40%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none; 
+    display: inline-block;
+    padding: 8px 12px;
+    position :relative;
+} 
+.nav-links ul li a{
+   
+  color:aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+} 
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ca4646; 
+    display: block;
+    margin: auto;
+} 
+.nav-links ul li:hover::after
+{
+    width: 100%;
+    transition: 0.5s;
+}
+.text-box{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border:1px solid white;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hero-btn:hover{
+    border: 1px solid rgb(238, 111, 65);
+    background: rgb(238, 111, 65);
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width:500px)
+{
+  nav h3{
+    left:100px;
+  }
+  nav .dash{
+    display: none;
+  }
+    .text-box h1{
+        font-size: 35px;
+        top: 12px;
+        font-family: fantasy;
+    }
+    .nav-links ul li
+    {
+        display: block;
+        padding: 2px 2px 2px 2px;
+        width: 130px;
+        height: 36px;
+  margin: 9px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  text-align: center;
+  transition: 0.3s;
+background:rgb(68, 67, 67) ;
+border-radius: 1rem;
+    }
+    .nav-links{
+        position:fixed;
+        background: #1b1a1a;
+        height: 100vh;
+        width: 160px;
+        top :0;
+      right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .icons i{
+      font-size: 25px;
+    }
+}
+
+/* -------------------------------------course-------------------------- */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: black;
+    color: whitesmoke;
+}
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0  rgba(0, 0, 0, 0.2);
+
+}
+.course-col img{
+  width: 360px;
+  border-radius:20px;
+}
+.course-col .sqli img{
+  width: 360px;border-radius:20px;height: 230px;
+}
+.course-col .python img{
+  width: 360px;border-radius:20px;height: 230px;
+}
+.course-col .cisco img{
+  width: 360px;border-radius:20px;height: 230px;
+}
+@media(max-width:500px)
+{
+    .row{
+        flex-direction: column ;
+    }
+    .course-col img{
+     width: 270px;
+    }
+    .course-col .cisco img{
+      width: 270px;
+    }
+    .course-col .python img{
+      width: 270px;
+    }
+  .row  .campus-col .sqli img{
+      width: 100px;
+      height: 90px;
+    }
+
+}
+/* -------------------------------campus--------------------------------- */
+.campus{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+}
+.layer:hover{  
+    background: rgb(226, 0, 0,0.7);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
+
+
+}
+/* ---------------------------------facilities-------------------------- */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.facilities{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+
+
+} 
+
+.facilities p{
+    padding: 0;
+}
+.facilities h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.facilities .image img{
+  text-align: left;
+align-self: left;
+border-radius: 47%;
+width: 94%;
+}
+@media(max-width:500px) {
+  .facilities .image img{
+  text-align: center;
+align-self: center;
+border-radius: 47%;
+width: 60%;
+}
+
+
+}
+/* ---------------------------------------testimonials---------------------------------- */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align:left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right:30px;
+    border-radius: 50%;
+
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+
+}
+.testimonial-col .fa{
+    color: orangered;
+}
+@media(max-width:700px)
+{
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+/* call to action */
+
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding:0;
+
+}
+.cta #section-wrapper{
+  width:90% ;
+  padding: 20px; 
+}
+
+.cta .box-wrapper{
+  position: relative;
+  width:900px ;
+  display: table;
+  border-radius: 30px;
+  margin: auto;
+  margin-top:30px ;
+
+}
+
+.cta .info-wrap{
+  float: left;
+  width:86.4% ;
+  height:540px ;
+  padding:30px ;
+  border-radius:30px 0  0 30px;
+  display:block ;
+  color: #fff3f3;
+background: linear-gradient(144deg,rgba(126,39,156,1)0%,rgba(49,39,157,1)100%);
+}
+
+.form-wrap{
+  float: right;
+  width: 130%;
+  padding: 40px 25px 35px 25px;
+  border-radius: 30px 30px 30px 30px;
+background:#ecf0f3;
+height: 550px;
+top: 30px;
+
+
+}
+.form-fields input,.form-fields textarea{
+border:  none;
+outline: none;
+background: none;
+font-size: 18px;
+width: 100%;
+padding: 10px 19px 10px 20px;
+}
+.info-title{
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.info-details li
+{
+margin-top:25px ;
+font-size: 18px;
+color: white;
+}
+.info-details
+{
+  list-style: none;
+  margin: 60px 0px;
+}
+
+.info-details li i{
+  background: #f44336;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.social-icons{
+  text-align: center;
+  margin: 20px 0px;
+  list-style: none;
+}
+.social-icons li{
+display: inline-block;
+
+}
+.social-icons li i{
+  background: #f44336;
+  color: #ecf0f3;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 22%;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.form-fields textarea{
+  height: 150px;
+  resize: none;
+}
+
+.form-group{
+  width: 46%;
+  float: left;
+  padding:10px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px white, inset -8px -8px 8px rgb(178, 168, 168);
+}
+.form-fields .form-group:last-child{
+  width: 96%;
+}
+.submit-button{
+  width: 96%;
+  height: 60px;
+  margin: 0 12px;
+  border-radius: 30px;
+color:white ;
+background: #f44336;
+border: #ecf0f3;
+text-align: center;
+float:inline-end;
+font-size: 25px;
+color: #1b1a1a;
+text-decoration: solid;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.submit-button:hover{
+  background: rgb(71, 212, 111);
+  transition: 0.5s;
+
+}
+
+@media(max-width:700px)
+{
+    .cta h1{
+        font-size: 24px;
+    }
+    
+}
+/* ------------------------------------footer----------------------------------- */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+}
+.course-col button:hover{
+background-color: red;
+transition: 1s;
+}
+.course-col button{
+  background: rgb(0, 0, 0);color: rgb(229, 220, 220);cursor: pointer;border-radius: 25px;width: 120px;border-color: #1b1a1a;font-family: 'Times New Roman', Times, serif;font-size: 15px;height: 30px;
+}
+.header video{
+width: 100%;}
+.icons{
+  font-size: 30px;
+}
+.course {
+  opacity: 0;
+ transform: translate3d(-50px, 0, 0);
+
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+}
+.course:hover{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.facilities{
+  opacity: 0;
+ transform: translate3d(0, -50px, 0);
+
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+}
+.facilities:hover{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+#education{
+  opacity: 0;
+ transform: translate3d(-50px, 0, 0);
+
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+}
+#education:hover{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+@media(max-width:700px) {
+  .facilities{
+  pointer-events: none;
+  opacity: 1;
+  }
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+</style>
+
+  </head>   
+  <body style="background-color: black;">
+    <section class="header">
+
+    
+      <nav>
+
+        
+        <a href="index.html"><img style="color: whitesmoke;background-color: transparent;width: 42px;" src="https://i0.wp.com/lucasmillershph.com/wp/wp-content/uploads/2014/08/logo_flat_portfolio_white.png?ssl=1"    alt=""
+        /></a><h3 class="dash">-</h3>
+        <h3 style="color: rgb(211, 1, 1);font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 24px;">My portfolio</h3>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="signin.html">LOGIN/SIGN-IN</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <video autoplay muted loop>
+        <source src="bkvid.mp4" type="video/mp4">
+        </video>
+      <div class="text-box">
+        <h1>Hii I am Subham Dey</h1>
+        <p>
+          welcome to my portfolio website. <br />
+          In this webdevelopment journey.
+        </p>
+        <div class="icons">
+          <a href="https://www.facebook.com/subham.dey.507027"><i  class="fa fa -facebook-official w3-hover-opacity w3-padding-small"></i></a>
+          <a href="https://www.instagram.com/swagster_subham_dey/"><i class="fa fa-instagram w3-hover-opacity w3-padding-small"></i></a>
+          <a href=""><i class="fa fa-snapchat w3-hover-opacity w3-padding-small"></i></a>
+          <a href=""><i class="fa fa-pinterest-p w3-hover-opacity w3-padding-small"></i></a>
+          <a href="https://twitter.com/subham_deyOP"><i class="fa fa-twitter w3-hover-opacity w3-padding-small"></i></a>
+            <a href="https://www.linkedin.com/feed/update/urn:li:share:6993273444196921345/"><i class="fa fa-linkedin w3-hover-opacity w3-padding-small"></i></a>
+        </div><br>
+        <a href="https://github.com/subhamdey1234?tab=repositories" class="hero-btn">See my projects.</a>
+      </div>
+    </section>
+    <!-- course -->
+
+    <section id="skills"  class="course">
+      <h1>my Skills and Work</h1>
+      <hr>
+     
+
+      <div class="row">
+        <div class="course-col">
+          <img src="https://wallpapercave.com/wp/wp7250087.jpg" alt="" srcset="">
+          <p style="color: black;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+I have started learning java since i was in School in class 8th ,then i have learned core java and <br>
+i have now good command in java programming.   <br>
+practised java in ecclipse IDE and also I have got a badge of java 5 star<br>
+in hackerrank practise dsALgo in java .         
+           
+          </p>
+          <button><a href="https://www.linkedin.com/feed/update/urn:li:share:6993273444196921345/" style="text-decoration: none;color: white;"> my badge</a></button>
+        </div>
+        <div class="course-col">
+          <img  src="https://th.bing.com/th/id/OIP.lzUhh3cMIyqgUJcdtzvMjgHaFj?pid=ImgDet&rs=1" alt="" srcset="">
+          <p  style="color: black;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+        Also i have learned c++ when I was in
+         class 11th and 12th at that time<br> i have practised c++
+         in msdos c++ ide <br>and also practised c++ in hackerrank and learned DSA using C++.
+          </p>
+          <button><a href="projects.html" style="text-decoration: none;color: white;"> my works</a></button>
+
+        </div>
+        <div class="course-col">
+          <img  src="https://wallpapercave.com/wp/wp7420966.jpg" alt="" srcset="">  
+
+          <p style="color: black;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+          I have learned html,css,and javascript in my College and made many webpages to<br>
+          do practise and finally i have learned that how to make a website Using Html,css,and javascript<br>
+          I have an experience of 1 year in web development.
+        
+          </p>
+          <button><a href="projects.html" style="text-decoration: none;color: white;"> my webpages</a></button>
+
+        </div>
+
+       
+
+
+      </div>
+      <div class="row">
+
+      <div class="course-col">
+        <div class="sqli">
+       <img style="width:200px ;"  src="https://th.bing.com/th/id/R.90871c6822607179f5d2cfd583f4aaeb?rik=Mjq2poldFRqyvw&riu=http%3a%2f%2fwww.hurricanesoftwares.com%2fwp-content%2fuploads%2f2009%2f06%2flogo_sql.gif&ehk=27JxvMmqZFhRjZW6EUR%2bEluINM9IT31PJLg9teQcucY%3d&risl=&pid=ImgRaw&r=0" alt="" srcset="">   </div>
+       <p style="color: black;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex illo
+          animi totam neque harum illum culpa error delectus dolorum accusamus
+          perferendis velit possimus numquam earum sunt nobis fuga, atque
+          
+        </p>
+        <button><a href="https://www.linkedin.com/feed/update/urn:li:share:6993273444196921345/" style="text-decoration: none;color: white;"> my works</a></button>
+
+      </div>
+
+
+
+      <div class="course-col">
+        <div class="python">
+     <img   src="https://th.bing.com/th/id/OIP.QkSSprAmEIPRhirfLO8L3QHaEK?pid=ImgDet&rs=1" alt="" srcset=""></div>  
+        <p style="color: black;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex illo
+          animi totam neque harum illum culpa error delectus dolorum accusamus
+          perferendis velit possimus numquam earum sunt nobis fuga, atque
+          labore id dolore aspernatur aperiam voluptatem cupiditate? Dolore
+         
+        </p>
+        <button><a href="https://www.linkedin.com/feed/update/urn:li:share:6993273444196921345/" style="text-decoration: none;color: white;"> my works</a></button>
+
+      </div>
+
+
+
+
+
+      <div class="course-col">
+        <div class="cisco">
+       <img class="cisco"  src="https://th.bing.com/th/id/OIP.kU4b_3yYank-CQOy8J754gHaEN?w=304&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" srcset="">  
+      </div>  <p style="color: black;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        I am Now learned networking in cisco packet tracer <br>
+        During my 3rd year of b-tech engineering I have learned how <br>
+        to use this software to trace pacets in networking .
+          
+        </p>
+        <button><a href="https://www.linkedin.com/feed/update/urn:li:share:6993273444196921345/" style="text-decoration: none;color: white;"> my works</a></button>
+
+      </div>
+</div>
+
+    </section>
+    <section id="education" class="campus">
+      <h1 style="color: white;">Education institutions</h1>
+      <hr>
+      <p  style="color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 15px;">
+      1.from nursery to 10th class i have studied in Saheed Laxman Nayak Public School<br>
+      <br>----------------------(I have secured <span style="color: red;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 78.2% </span>in my <span style="color: red;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> ICSE board examinaton)</span>----------------------------------<br><br>
+      2.after 10th i have shifted to Bhubaneshawar and did my 11th and 12th in vikash residential school<br>
+      <br>----------------------(I have secured <span style="color: red;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 93.1%</span> in my <span style="color: red;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 12TH CBSE board examinaton)</span>----------------------------------<br><br>
+      3.after completion of my 12th i have joined ITER recently persuing B-tech engineering in CSIT branch
+      </p>
+
+      <div class="row">
+        <div  class="campus-col">
+          <img style="height:500px ;"
+            src="https://th.bing.com/th/id/OIP.aqSkMLHWkKkUJtYuZcB4EgHaE8?pid=ImgDet&rs=1"
+            alt="No image found"
+          />
+          <div class="layer">
+            <h3>Saheed Laxman nayak<br>
+            public School,Umerkote</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img style="height:500px ;"
+            src="https://yt3.ggpht.com/a/AGF-l7_Y9pZgDJjVXCmq9pofDYIg1BvJX2UWVtmSbA=s900-c-k-c0xffffffff-no-rj-mo"
+            alt="No image found"
+          />
+          <div class="layer">
+            <h3>Vikash residential<br>school,BBSR</h3>
+            
+      
+          </div>
+        </div>
+        <div class="campus-col">
+          <img style="height:500px ;"
+            src="https://qph.fs.quoracdn.net/main-qimg-014919eca7be9e6f615f231e5b753a8e-c"
+            alt="No image found"
+          />
+          <div class="layer">
+            <h3>ITER(SOA)<BR>UIVERSITY,BBSR</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------facilities---------------------------- -->
+    <section id="about" class="facilities">
+      
+      <h1 style="color: white;">
+       About Me
+      </h1><hr><br>
+     
+       
+         
+      
+        
+      <div class="row"> 
+          <div style="text-align: center;"  class="image">
+        
+
+
+          <img src="https://avatars.githubusercontent.com/u/74315357?v=4" alt=""></div>
+         
+          <p style="color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: left;font-style: oblique;font-weight:bolder;font-size: medium;">Hii..I'm Subham Dey I'm currently studying Computer Science at Institute of Technical Education and Research.(SOA UNIVERSITY)<br>
+
+            I take joy in solving complex problems with elegant solutions by simplifying and distilling core concepts.<br>
+            
+            I'm proficient in full stack development and I know Java,c++,Html,css,javascript Languages to solve problems and make awesome websites and webpages.
+            <br><br>
+            I'm an effective communicator and thrive in cross-functional teams. I enjoy learning and see it as an integral part of team work. I combine those skills with teamwork and a strong understanding of the organizational structure to work efficiently and pragmatically in alignment with business goals.
+            <br>
+            I take an active interest in technology, arts, business, and how their conflation impacts society.
+            <br><br>
+            I'm an Ace Dancer I have achieved many prizes in state and district level competetion <br>also I am interested in machine learning with python to make projects.
+            
+            When I'm not working in front of screen, I enjoy DANCING,SINGING,PLAYING CRICKET and nature 🌳⛵️⛰.<br>
+
+          </p>
+<br>
+          
+      </div><br><br> 
+      
+      <div class="icons">
+        <a href=""><i  class="fa fa-facebook-official w3-hover-opacity w3-padding-small"></i></a>
+        <a href=""><i class="fa fa-instagram w3-hover-opacity w3-padding-small"></i></a>
+        <a href=""><i class="fa fa-snapchat w3-hover-opacity w3-padding-small"></i></a>
+        <a href=""><i class="fa fa-pinterest-p w3-hover-opacity w3-padding-small"></i></a>
+        <a><i class="fa fa-twitter w3-hover-opacity w3-padding-small"></i></a>
+          <a href="https://www.linkedin.com/feed/update/urn:li:share:6993273444196921345/"><i class="fa fa-linkedin w3-hover-opacity w3-padding-small"></i></a>
+      </div>      
+</div>
+       
+    </section>
+  
+<!-- -----------------------------------call to action------------------------------------- -->
+
+
+
+
+    <!-- ==========================================testimonials-------------- -->
+
+
+<section class="testimonials">
+  <h1>What our students says.</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore provident veniam assumenda nam eveniet mollitia, error natus harum quasi. Blanditiis delectus accusantium sunt debitis unde!</p>
+  <div class="row">
+    <div class="testimonial-col">
+      <img src="eduford_img/eduford_img/user1.jpg" alt="">
+      <div><p> <b>Sonam Gupta</b> dolor sit amet consectetur adipisicing elit. Ipsam, similique! Mollitia, delectus possimus eius in quisquam eum id a consequatur tenetur perferendis quas consequuntur cumque nemo! Id optio doloremque aut.</p></div>
+      
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-o"></i>
+      
+    </div>
+    <div class="testimonial-col">
+      <img src="user2.jpg" alt="">
+      <div><p> <b>Jhonny Gaddar</b> dolor sit amet consectetur adipisicing elit. Ipsam, similique! Mollitia, delectus possimus eius in quisquam eum id a consequatur tenetur perferendis quas consequuntur cumque nemo! Id optio doloremque aut.</p></div>
+      
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half-o"></i>
+      
+    </div>
+  </div>
+
+</section>
+<!-- -------------------------------------footer---------------------------------- -->
+<section class="footer">
+ 
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
+    <!-- ------------------------------------------------java script ---------------------------------------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        if (showmenu) {
+          navLinks.style.right = "0";
+          navLinks.style.width="180px"
+        }
+      
+      }
+      function hidemenu() {
+        if (hidemenu) {
+          navLinks.style.width="0";
+     
+        }
+       
+      }
+    </script>
+
+
+
+
+  
+
+  </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in form page</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            background: black;
+            color: aliceblue;
+            overflow: hidden;
+        }
+        h1,h2,h3,h4{
+            font-weight: 300;
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        #left{
+display: flex;
+flex-direction: column;
+flex: 1;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+
+        }
+        #right
+        {
+flex: 1;
+        }
+.signin{
+display: flex;
+flex-direction: column;
+width: 80%;
+align-items: center;
+justify-content: center;
+padding-bottom: 1rem;
+}
+.signin .logo{
+    margin-bottom: 2vh;
+}
+.signin label{
+    font-weight: 500;
+    line-height: 2rem ;
+    font-size: medium;
+}
+.signin .text-input{
+    margin-bottom: 1.3rem;
+    border-radius: 2px;
+    width: 100%;
+    background:black ;
+    border:1px solid #555;
+    color: antiquewhite;
+    padding: 5px;
+    line-height: 1.3rem;
+}
+.signin form {
+    width: 80%;
+    padding-bottom:1rem ;
+}
+.signin form button{
+border-radius: 30px;
+width: 530px;
+height: 40px;
+background-color: #ff7b39;
+text-decoration: none;
+font-weight: 500;
+color: black;
+border: 0;
+cursor: pointer;
+display: block;
+font-size: larger;
+}
+form button:hover{
+    background-color: aquamarine;
+    transition: 1s;
+}
+.secondary-btn{
+    padding: 0.7rem 1rem ;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: backgrounf-color 0.5s;
+    text-decoration: none;
+}
+.secondary-btn:hover{
+    background-color:#ff7b39 ;
+}
+#showcase{
+   
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   align-items: center;
+   text-align: center;
+    background: url("https://static.vecteezy.com/system/resources/previews/000/561/326/original/red-polygonal-mosaic-background-creative-design-templates-vector.jpg") no-repeat center center / cover;
+}
+.signin .secondary-btn,.or,.links{
+    width: 60%;
+}
+.signin .links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.signin .or{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    flex-direction: row;
+}
+.signin .or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+.signin .or span{
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+#main-footer{
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 3rem;
+}
+#main-footer a{
+    color: #aaa29e;
+    text-decoration: underline;
+}
+.links #forgot-password:hover,#signinwith:hover{
+    color: #ff7b39;
+    transition: 1s;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="left">
+           
+            <div class="signin">
+         <div class="logo">
+            <img style="width: 100px ;text-align: center;border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74315357?v=4" alt="" srcset="">
+            <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;"><strong>Portfolio</strong></h2>
+         </div>
+<form action="">
+    <div>
+        <label >Email or Username</label>
+        <input type="text" class="text-input" required>
+
+    </div>
+    <div>
+        <label >password</label>
+         <input type="password" class="text-input" required>
+
+    </div>
+    <div>
+        <button type="submit" class="primary-btn">  sign-in </button>
+    </div>
+</form>
+<div class="links">
+    <a id="forgot-password"  href="#">Forgot password</a>
+    <a id="signinwith" href="#">Sign-in with comapny or school</a>
+
+</div>
+<div class="or">
+    <hr class="bar">
+    <span>OR</span>
+    <hr class="bar">
+
+</div>
+<a href="createacc.html" class="secondary-btn">Create Account</a>
+<footer id="main-footer">
+    <p>
+    copyright &copy; 2022 Subham Dey All rights reserved
+    </p>
+</footer>
+<div>
+    <a style="color: #fff;" href="#" id="">terms of use</a>|<a style="color: #fff;" href="#">Privacy Policy</a>
+</div>
+
+
+            </div>
+        </div>
+        <div id="right">
+             <div id="showcase">
+                <div class="showcase-content">
+                    <h1 class="showcase-text">Let's work <strong>Together</strong></h1>
+<a href="#" style="font-size: large;" class="secondary-btn">Welcome to my website.. </a>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
